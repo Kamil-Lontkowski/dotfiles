@@ -12,7 +12,8 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 ```powershell
 Install-Module Terminal-Icons \
 Install-Module PSReadLine \
-Install-module posh-git
+Install-module posh-git \
+Install-Module PSFzf
 ```
 
 # 3. Add theme to Oh-My-Posh
