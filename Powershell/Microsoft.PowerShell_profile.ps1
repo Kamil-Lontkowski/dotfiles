@@ -2,6 +2,12 @@
 Import-Module posh-git
 Import-Module Terminal-Icons
 Import-Module PSReadLine
+
+# https://sathyasays.com/2023/04/11/powershell-fzf-psfzf/
+# https://github.com/kelleyma49/PSFzf
+Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
+Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
+
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 
@@ -41,6 +47,8 @@ $ENV:FZF_DEFAULT_OPTS=@"
 "@
 
 $ENV:BAT_THEME="Catppuccin-mocha"
+
+$ENV:FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}' --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 
 function quick { Set-Location 'C:\Users\werbu\OneDrive\quicknotes' }
 
