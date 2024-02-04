@@ -16,6 +16,10 @@ end)
 vim.keymap.set("n", "<leader>dtb", function()
     dap.toggle_breakpoint()
 end)
+
+vim.keymap.set("n", "<leader>dtc", function()
+    dap.set_breakpoint(vim.fn.input("Breakpoint condition: ")) 
+end)
   
 vim.keymap.set("n", "<leader>dso", function()
     dap.step_over()
