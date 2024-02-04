@@ -16,16 +16,17 @@ vim.keymap.set('n', '<leader>fgc', builtin.git_commits, {}) -- search git commit
 vim.keymap.set('n', '<leader>fgf', builtin.git_bcommits, {}) -- search git commits in current buffer
 vim.keymap.set('n', '<leader>fgb', builtin.git_branches, {}) -- search branches
 vim.keymap.set('n', '<leader>freg', builtin.registers, {}) -- search register, paster on selection 
+vim.keymap.set('n', '<leader>fds', builtin.lsp_document_symbols, {}) -- show symbols in current buffer, like intelliJ structure
 
 telescope.setup {
     pickers = {
       buffers = {
         mappings = {
           i = {
-            ["<C-d>"] = actions.delete_buffer .delete_buffer           
+            ["<C-d>"] = actions.delete_buffer         
           },
           n = {
-            ["<C-d>"] = actions.delete_buffer .delete_buffer 
+            ["<C-d>"] = actions.delete_buffer
           }
         }
       }
