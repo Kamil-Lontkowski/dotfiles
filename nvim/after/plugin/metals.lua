@@ -10,6 +10,10 @@ metals_config.settings = {
 
 metals_config.capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+-- Taken from https://github.com/scalameta/nvim-metals/blob/main/lua/metals/config.lua#L321
+
+metals_config.root_patterns = { "build.sbt", "build.sc", "build.gradle", "build.gradle.kts", "pom.xml", ".scala-build", "bleep.yaml", ".git", "project.scala" }
+
 metals_config.on_attach = function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
   require('metals').setup_dap()
