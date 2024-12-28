@@ -1,0 +1,18 @@
+theme = catppuccin-mocha
+window-theme = ghostty
+font-family = MesloLGS NF
+cursor-style = block
+macos-titlebar-style = tabs
+
+# keybinds
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+l=goto_split:right
+
+keybind = super+d=new_split:right
+keybind = super+shift+d=new_split:down
+
+keybind = super+t=new_tab
+keybind = ctrl+tab=next_tab
+keybind = ctrl+shift+tab=previous_tab

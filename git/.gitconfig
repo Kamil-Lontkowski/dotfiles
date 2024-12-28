@@ -1,0 +1,33 @@
+[user]
+	name = Kamil-Lontkowski
+	signingkey = *********
+	email = kamillont14@gmail.com
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+	
+[include]
+    path = "/Users/kamil/.config/delta/themes/catppuccin.gitconfig"
+	
+[core]
+    pager = delta
+    
+[interactive]
+    diffFilter = delta --color-only
+    
+[delta]
+    navigate = true
+    dart = true
+    line-numbers = true
+    hyperlinks = true
+    hyperlinks-file-link-format = "zed://file/{path}:{line}"
+    features = catppuccin-mocha
+    
+[merge]
+    conflictstyle = zdiff3
