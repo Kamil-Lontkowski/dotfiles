@@ -59,5 +59,7 @@ function cleanScala {
 	Remove-Item -Recurse -Path .\null
 }
 Set-Alias -Name k -Value kubectl
+Set-Alias -Name scli -Value scala-cli
+Set-Alias -Name lgit -Value lazygit
 
 oh-my-posh init pwsh --config 'C:\Users\werbu\AppData\Local\Programs\oh-my-posh\themes\powerlevel10k_my.omp.json' | Invoke-Expression
