@@ -16,3 +16,5 @@ keybind = super+shift+d=new_split:down
 keybind = super+t=new_tab
 keybind = ctrl+tab=next_tab
 keybind = ctrl+shift+tab=previous_tab
+
+keybind = global:ctrl+grave_accent=toggle_quick_terminal
