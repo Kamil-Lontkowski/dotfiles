@@ -50,6 +50,8 @@ $ENV:BAT_THEME="Catppuccin-mocha"
 
 $ENV:FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}' --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 
+$ENV:YAZI_FILE_ONE="C:\Program Files\Git\usr\bin\file.exe"
+
 function quick { Set-Location 'C:\Users\werbu\OneDrive\quicknotes' }
 
 function cleanScala {
