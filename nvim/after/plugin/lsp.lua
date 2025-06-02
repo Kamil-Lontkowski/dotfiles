@@ -3,16 +3,6 @@ local lspconfig = require("lspconfig")
 
 lsp.preset("recommended")
 
-lsp.ensure_installed({
-  'ts_ls',
-  'rust_analyzer',
-  'pyright',
-  'dockerls',
-  'svelte',
-  'powershell_es',
-  'docker_compose_language_service'
-})
-
 -- Fix Undefined global 'vim'
 lsp.nvim_workspace()
 
