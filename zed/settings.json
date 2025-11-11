@@ -7,6 +7,28 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "macos": {
+    "ui_font_family": "JetBrains Mono",
+    "buffer_font_family": "JetBrains Mono",
+    "terminal": {
+      "font_family": "MesloLGS NF"
+    }
+  },
+  "windows": {
+    "title_bar": {
+      "show_menus": true
+    },
+    "ui_font_family": "JetBrainsMono NF",
+    "buffer_font_family": "JetBrainsMono NF",
+    "terminal": {
+      "blinking": "on",
+      "font_family": "MesloLGS Nerd Font Propo",
+      "shell": {
+        "program": "pwsh.exe"
+      }
+    }
+  },
+  "ui_font_fallbacks": [".ZedMono"],
   "tab_bar": {
     "show": true
   },
@@ -42,16 +64,13 @@
   "features": {
     "edit_prediction_provider": "copilot"
   },
-  "ui_font_family": "JetBrains Mono",
   "ui_font_size": 14,
-  "buffer_font_size": null,
-  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 15,
   "cursor_shape": "block",
   "base_keymap": "JetBrains",
   "theme": "Catppuccin Mocha",
   "icon_theme": "Catppuccin Mocha",
   "terminal": {
-    "font_family": "MesloLGS NF",
     "font_size": 13,
     "cursor_shape": "block"
   },
@@ -67,6 +86,10 @@
   "relative_line_numbers": false,
   "project_panel": {
     "auto_reveal_entries": false
+  },
+  "toolbar": {
+    "selections_menu": true,
+    "code_actions": true
   },
   "indent_guides": {
     "coloring": "indent_aware"
